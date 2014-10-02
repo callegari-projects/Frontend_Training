@@ -46,7 +46,7 @@ header
 		text-decoration none
 		margin 0
 		padding 3px
-
+		
 	#titulo_nav
 		width 70%
 
@@ -58,6 +58,7 @@ header
 		font-size 0.8em
 		padding 0.1em 0.1em
 		text-decoration none
+		
 
 	#titulo_nav nav a:hover
 		border-color white	
@@ -84,21 +85,56 @@ header
 		border 2px solid #DDD
 		border-radius 0.5em
 		margin 0.5em 0 0 0
-		
 		padding 0.5em
 		overflow hidden
+		
 
-		h2
-			font-size 0.7em
-			margin 0
-			padding 0
+		.titulo_item, .votos
+			display inline-block
+			vertical-align top
+			
+		
+		.votos
+			text-align center
+			width 14%
+
+			a
+				text-decoration none
+				transition all 1s ease
+
+			a:hover
+				font-size 1.3em
+
+			.down
+				color #FFB341
+
+			.up
+				color #4B8FF5
+		
+
+		.titulo_item
+			width 80%
+			float right
+			font-family "Open Sans"
+			
+			p
+				font-size 0.9em
+				font-weight bold
+				margin 0
+				padding 0
+
 
 		.autor
 			font-size 0.7em
-			margin -3em 0  0 15%
+			text-align left
+			float right
+			width 80%
+
 
 			p
 				display inline
+				margin 0
+				padding 0
 
 			.icon-heart2
 				color #f66
@@ -116,40 +152,13 @@ header
 				display inline-block
 				color white
 				font-weight bold
-				padding 0.5em
+				padding 0.3em
 				border-radius 0.5em
 				cursor pointer
 				margin 0 0 2px 1em
 
-
-
-
-		.titulo_item, .votos
-			display inline-block
-			vertical-align top
-
-		.titulo_item
-			width 80%
-
-			figure
-				float right
-
-		.votos
-			text-align center
-			width 14%
-
-			a
-				text-decoration none
-				transition all 1s ease
-
-			a:hover
-				font-size 1.3em
-
-			.down
-				color #FFB341
-
-			.up
-				color #4B8FF5
-
+		.foto
+			display: none;
+	
 
 @import "responsive.styl"
